@@ -16,7 +16,7 @@
         <div class="row py-5">
             @foreach ($movies as $movie)
                 <div class="col-4 mb-4"> <!-- Adjust the col-* value based on your preference -->
-                    <div class="card mc_card" style="width: 100%;">
+                    <div class="card mc-card" style="width: 100%;">
                         <div class="card-body text-center">
                             <h5 class="card-title">{{ $movie['title'] }}</h5>
                             <h6 class="card-subtitle mb-2 text-muted">{{ $movie['original_title'] }}</h6>

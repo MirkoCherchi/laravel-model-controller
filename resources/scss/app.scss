@@ -1,5 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
-body{
+body {
     background-color: red;
+    color: rgb(0, 255, 13);
+}
+
+.mc-card {
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgb(252, 189, 117);
 }
