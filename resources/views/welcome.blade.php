@@ -12,8 +12,22 @@
 
 <body>
     <div class="container py-5">
-        <h1 class="text-center">Laravel Template</h1>
+        <h1 class="text-center">Laravel Model-Controller</h1>
+        <div class="row py-5">
+            @foreach ($movies as $movie)
+                <div class="col-4 mb-4"> <!-- Adjust the col-* value based on your preference -->
+                    <div class="card mc_card" style="width: 100%;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{{ $movie['title'] }}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{ $movie['original_title'] }}</h6>
+                            <p class="card-text">{{ $movie['vote'] }}</p>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
     </div>
+
 
     {{-- Insert code images <img src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> --}}
 </body>
